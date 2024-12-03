@@ -1,0 +1,138 @@
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("fundohospital.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cadastro-card {
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 900px;
+}
+
+header h1 {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  display: block;
+  margin-top: 1rem;
+  color: var(--secondary-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+button.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+button.btn-primary:disabled,
+button[disabled] {
+  background-color: #43575a;
+  border-color: #43575a;
+  cursor: not-allowed;
+  color: #d6d6d6;
+}
+
+button.btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.input-container {
+  position: relative;
+}
+
+.checkbox-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.checkbox-label img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 13px;
+  width: 16px; /* adjust the size to your liking */
+  height: 16px;
+  border: none;
+
+  content: url("olhafechado.png");
+}
+
+.checkbox-label input[type="checkbox"]:checked + img {
+  /* add styles for the checked state, e.g. a different image or a tick icon */
+  content: url("olhaberto.png");
+}
+
+.vazio {
+  height: 0;
+}
+
+button.btn-secondary {
+  background-image: url("voltar.png");
+  background-size: 30px 30px;
+  position: center;
+  float: left;
+  margin: 1rem;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button.btn-secondary:hover {
+  background-image: url("voltarhover.png"); /* imagem de hover */
+  background-color: transparent;
+}
+
+.senha-requisitos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.senha-requisitos li {
+  margin-bottom: 5px;
+}
+.senha-requisitos li i {
+  margin-right: 5px;
+}
+.senha-requisitos li {
+  font-size: 12px; /* diminui a fonte para 12px */
+  opacity: 0.7; /* deixa o texto um pouco opaco */
+}
+
+.text-success {
+  margin-left: 15px;
+  color: green;
+}
+.text-danger {
+  margin-left: 15px;
+  color: red;
+}

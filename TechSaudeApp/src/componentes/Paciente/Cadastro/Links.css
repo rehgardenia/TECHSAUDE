@@ -1,0 +1,29 @@
+.border {
+  border: 1px solid #ddd; 
+}
+
+header h1 {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.vazio {
+  height: 0;
+}
+button.btn-secondary {
+  background-image: url("voltar.png");
+  background-size: 30px 30px;
+  position: center;
+  float: left;
+  margin: 1rem;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button.btn-secondary:hover {
+  background-image: url("voltarhover.png"); /* imagem de hover */
+  background-color: transparent;
+}

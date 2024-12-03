@@ -1,0 +1,182 @@
+.alergias-vacinas-container{
+  min-height: 860px;
+  padding: 30px;
+  margin-left: 60px;
+  background-color: var(--background-color);
+  flex-direction: row;
+}
+
+.alergias-main, .vacinas-main {
+  flex-grow: 1;
+  background-color: var(--white2-color);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  transition: margin-left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.alergias-header, .vacinas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.alergias-botao-adicionar, .vacinas-botao-adicionar {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  text-align: center;
+  }
+  .espacamento-botao {
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+  }
+  
+.alergias-botao-adicionar:hover, .vacinas-botao-adicionar:hover {
+  background-color: var(--secondary-color);
+}
+
+.alergias-table, .vacinas-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--background-color);;
+ 
+}
+
+.table-row:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.alergias-table th, .vacinas-table th,
+.alergias-table td, .vacinas-table td {
+  border: 1px solid var(--white-color);
+  padding: 8px;
+}
+
+.alergias-acao, .vacinas-acao {
+  text-align: center;
+
+}
+
+.alergias-td-button, .vacinas-td-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.alergias-icon, .vacinas-icon {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+.alergias-td-button:hover .alergias-icon, .vacinas-td-button:hover .vacinas-icon {
+  color: black;
+}
+
+.alergias-modal-container, .vacinas-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alergias-modal, .vacinas-modal {
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 500px;
+}
+
+.alergias-close-modal, .vacinas-close-modal {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--tertiary-color);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--white2-color);
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+}
+
+
+.delete-icon {
+  color: red;
+}
+
+.vacinas-page-title, .alergias-page-title {
+  color: var(--primary-color);
+  margin: 0; 
+}
+
+
+.sidebar {
+  position: fixed;
+  width: 60px; 
+  transition: width 0.3s ease; 
+}
+
+.sidebar.expanded {
+  width: 200px; 
+}
+
+.sidebar.expanded + .alergias-vacinas-container {
+  margin-left: 200px; 
+}
+
+.sidebar:not(.expanded) + .alergias-vacinas-container {
+  margin-left: 60px; 
+}
+
+
+@media (max-width: 768px) {
+  .alergias-vacinas-container{
+    width: calc(100% - 60px); 
+    margin-left: 60px; 
+  }
+
+  .sidebar {
+    width: 60px; 
+  }
+
+  .sidebar.expanded {
+    width: 200px; 
+  }
+
+  .alergias-vacinas-container {
+    margin-left: 60px;
+  }
+}

@@ -1,0 +1,51 @@
+.app-header {
+  background-color: var(--white-color); 
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+  color: var(--primary-color);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color:var(--primary-color);
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-department {
+  font-size: 0.9em;
+  color: var(--secondary-color);
+}
+
+.user-avatar {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  
+}

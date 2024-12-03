@@ -1,0 +1,138 @@
+.historico-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.historico-main-content {
+  flex: 1;
+  margin-left: 60px;
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.historico-content {
+  background-color: var(--white2-color);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+
+.historico-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+
+
+.historico-file-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.historico-file-list li {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.historico-upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.form-control-file {
+  display: none;
+}
+
+.upload-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.historico-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--background-color);;
+ 
+}
+
+.table-row:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.historico-table th, .historico-table td {
+  border: 1px solid var(--white-color);
+  padding: 8px;
+  text-align: center;
+}
+.historico-acao {
+  text-align: center;
+
+}
+.upload-btn,
+.cancel-btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  border: 1px solid  var(--primary-color) ;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.upload-btn:hover,
+.cancel-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+
+.sidebar.expanded + .historico-main-content {
+  margin-left: 250px;
+}
+.historico-botao-download{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+  text-align: center;
+}
+

@@ -1,0 +1,111 @@
+.historico-consultas-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; 
+}
+
+.historico-consultas-main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 60px; 
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+  justify-content: space-between;
+}
+
+.historico-consultas-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--white2-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.historico-consultas-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.historico-consultas-table-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.historico-consultas-table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.historico-consultas-table th,
+.historico-consultas-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--background-color);
+}
+
+table .cancelada {
+  background-color: lightcoral !important; /* ou a cor que preferir */
+}
+
+.historico-consultas-table th {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.historico-consultas-table td {
+  color: var(--tertiary-color);
+}
+
+.historico-consultas-actions-container {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 20px;
+}
+
+.historico-consultas-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  width: 120px; 
+  flex: 1; 
+  max-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .historico-consultas-content {
+    margin-left: 0px; 
+  }
+
+  .sidebar {
+    width: 60px; 
+  }
+
+  .sidebar.expanded {
+    width: 200px;
+  }
+}

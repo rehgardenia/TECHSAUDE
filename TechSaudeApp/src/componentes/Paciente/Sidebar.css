@@ -1,0 +1,100 @@
+.sidebar {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px; 
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.sidebar.expanded {
+  width: 250px; 
+}
+
+.sidebar .logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%; 
+}
+
+.sidebar .logo img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  flex: 1; 
+  width: 100%;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; 
+}
+
+.sidebar nav ul li {
+  margin: 10px 0; 
+}
+
+.sidebar nav ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%; 
+}
+
+.sidebar nav ul li a .fa-icon {
+  margin-right: 10px; 
+}
+
+.sidebar nav ul li a:hover {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.sidebar.collapsed nav ul li a {
+  justify-content: center;
+}
+
+.sidebar nav ul li.settings {
+  margin-top: auto; 
+}
+
+.sidebar nav ul li.settings a .fa-icon {
+  font-size: 20px; 
+}
+
+.sidebar .toggle-sidebar {
+  margin-bottom: 20px;
+}
+
+.sidebar .toggle-sidebar a {
+  color: var(--white-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px;
+  width: 100%; 
+}
+
+.sidebar .toggle-sidebar a .fa-icon {
+  font-size: 20px; 
+}

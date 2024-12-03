@@ -1,0 +1,123 @@
+.consultas-agendadas-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; 
+}
+
+.consultas-agendadas-main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 60px;
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+  justify-content: space-between;
+}
+
+.consultas-agendadas-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--white2-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.consultas-agendadas-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.consultas-agendadas-table-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.consultas-agendadas-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.consultas-agendadas-table th,
+.consultas-agendadas-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--background-color);
+}
+
+.consultas-agendadas-table th {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.consultas-agendadas-table td {
+  color: var(--tertiary-color);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.dropdown-toggle {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.dropdown-menu {
+  background-color: var(--white-color);
+}
+
+.dropdown-item {
+  color: var(--tertiary-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .consultas-agendadas-content  {
+    margin-left: 0px; 
+  }
+
+  .sidebar {
+    width: 60px; 
+  }
+
+  .sidebar.expanded {
+    width: 200px;
+  }
+}

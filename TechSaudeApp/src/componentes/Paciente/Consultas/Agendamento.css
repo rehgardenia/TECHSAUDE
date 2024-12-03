@@ -1,0 +1,107 @@
+.agendamento-container {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+.agendamento-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.agendamento-form .form-control {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.agendamento-form .btn {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.agendamento-form .btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.agendamento-form .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+
+}
+
+.agendamento-form .btn-primary:hover {
+  background-color: #17a2b8; /* Cor ao passar o mouse */
+  border-color: #17a2b8;     /* Borda combinando ao passar o mouse */
+}
+
+.agendamento-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.agendamento-main-content {
+  flex: 1;
+  margin-left: 60px;
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.agendamento-content {
+  background-color: var(--white2-color);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.agendamento-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.sidebar.expanded + .agendamento-main-content,
+.sidebar.expanded + .consultas-agendadas-main-content,
+.sidebar.expanded + .historico-consultas-main-content {
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+  .agendamento-content {
+    margin-left: 0px; 
+  }
+
+  .sidebar {
+    width: 60px; 
+  }
+
+  .sidebar.expanded {
+    width: 200px; 
+  }
+}

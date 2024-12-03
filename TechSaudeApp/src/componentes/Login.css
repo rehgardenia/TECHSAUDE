@@ -1,0 +1,106 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("fundohospital.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-card {
+  display: flex;
+  width: 90%;
+  max-width: 800px;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.left-section {
+  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: auto; 
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem; 
+}
+
+.site-name {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+article {
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer a {
+  display: block;
+  margin-top: 1rem;
+  color: var(--secondary-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+button.btn-primary {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+button.btn-primary:hover {
+  background-color: var(--primary-color);
+}
+
+button.btn-primary:active {
+  background-color: var(--tertiary-color) !important;
+  border-color: var(--tertiary-color) !important;
+}
+
+button.btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
