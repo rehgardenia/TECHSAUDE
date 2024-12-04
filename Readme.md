@@ -30,6 +30,15 @@ O sistema visa criar uma aplicação acessível e intuitiva, onde os usuários (
 3. **Acessibilidade**: Foco na usabilidade para todos os usuários.
 
 ---
+## 🌺 Autoras e Funções
+
+- Alicia Rodrigues : Documentação 
+- Cibelly Angel : Documentação
+- Grasielly Ribeiro : Front-End
+- Renata Gardenia : Back-End
+- Sophia Freire : Designer
+
+---
 
 ## 📄 Licença
 
