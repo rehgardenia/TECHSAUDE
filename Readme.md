@@ -1,6 +1,6 @@
 # TECHSAUDE - Uma aplicação de armazenamento de dados médicos
 
-Bem-vindo ao repositório do TECHSAUDE! Este projeto é desenvolvido como parte do Trabalho de Conclusão de Curso (TCC) do Curso Técnico em Informática do Instituto Federal de Educação, Ciência e Técnologia de São Paulo, Campus Cubatão. 
+Bem-vindo ao repositório do TECHSAUDE! Este projeto é desenvolvido como parte do Trabalho de Conclusão de Curso (TCC) do Curso Técnico em Informática do Instituto Federal de Educação, Ciência e Técnologia de São Paulo, _Campus_ Cubatão. 
 
 ---
 
@@ -44,9 +44,14 @@ O sistema visa criar uma aplicação acessível e intuitiva, onde os usuários (
 
 Este projeto está sob a licença [MIT](LICENSE).
 
+Este projeto também segue as **Leis de Proteção Geral de Dados (LGPD)**.
+Com Termo de Condições de Uso, Termo de Privacidade e com o Termo de Compartilhamento de Dados.
+
+Você pode encontrar os termos na página de Cadastro.
+
 ---
 
-### 📞 Contato
+## 📞 Contato
 
 Caso tenha dúvidas ou sugestões, entre em contato com a equipe através do email: **suporte.techsaude@gmail.com**
 
